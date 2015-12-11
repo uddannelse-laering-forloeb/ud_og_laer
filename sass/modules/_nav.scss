@@ -63,13 +63,15 @@
     }
   }
 
-  .nav--list-item:last-child {
+  // Last item should be a dropdown.
+  .nav--list-item.has-dropdown > .nav--list-link {
     background-image: url('/profiles/ulf/themes/ulftheme/images/arrow-white.svg');
-    background-position: 90px center;
+    background-position: right center;
     background-repeat: no-repeat;
     background-size: 15px;
-    padding-right: 20px;
+    padding-right: 25px;
     padding-left: 10px;
+    margin-right: 10px;
   }
 
   &--dropdown-item {
@@ -180,7 +182,7 @@
 }
 
 
-// Reuse the main menu html but neest once to override styles.
+// Reuse the main menu html but nest once to override styles.
 .nav--mobile {
   &  .nav--list-link.active {
     background: inherit;

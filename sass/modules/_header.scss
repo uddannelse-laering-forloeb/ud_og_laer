@@ -31,6 +31,7 @@
 
   &--logo {
     left: $spacing /2;
+    height: 100%;
     max-width: 15em;
     position: absolute;
     top: 50%;
@@ -39,6 +40,10 @@
 
     @include breakpoint(45em) {
       max-width: 30%;
+    }
+
+    &-image {
+      height: 100%;
     }
   }
 

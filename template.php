@@ -56,6 +56,7 @@ function ulf_silkeborg_menu_tree__main_menu ($variables) {
   return $variables['tree'];
 }
 
+
 /**
  * Implements theme_menu_tree().
  *
@@ -69,7 +70,6 @@ function ulf_silkeborg_menu_tree__menu_about_ulf ($variables) {
   // Strip default main menu tree of wrappers.
   return $variables['tree'];
 }
-
 
 
 /**
@@ -100,11 +100,14 @@ function ulf_silkeborg_menu_link__main_menu($variables){
       $element['#localized_options']['attributes']['class'][] = 'is-course';
       break;
     case 'Om ULF':
-      // Make Om ULF a dropdown.
-      $menu_array = module_invoke('menu', 'block_view', 'menu-about-ulf');
-      $element['#attributes']['class'][] = 'js-toggle-about';
-      $sub_menu = '<div class="nav--sub js-about-menu is-hidden"><ul class="nav--static-pages is-menu">' . render($menu_array['content']) . '</ul></div>';
-      break;
+  }
+
+  if ($element['#original_link']['expanded'] == TRUE) {
+    // Make item a dropdown.
+    $menu_array = module_invoke('menu', 'block_view', 'menu-about-ulf');
+    $element['#attributes']['class'][] = 'js-toggle-about';
+    $element['#attributes']['class'][] = 'has-dropdown';
+    $sub_menu = '<div class="nav--sub js-about-menu is-hidden"><ul class="nav--static-pages is-menu">' . render($menu_array['content']) . '</ul></div>';
   }
 
   $element['#attributes']['class'][] = 'nav--list-item';
