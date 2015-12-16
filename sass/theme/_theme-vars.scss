@@ -26,11 +26,11 @@ $gray-dark:        lighten($black, 50%);
 $gray-darker:      lighten($black, 40%);
 $gray-darkest:     lighten($black, 30%);
 
-$light-blue:       lighten(rgb(140,168,203), 80%);  // Block bg color.
 $red:              rgb(235,95,90);  // Block bg color.
 $blue:             rgb(140,168,203);  // Daycare color.
-$brown:            rgb(187,150,11)  ; // School color.
+$brown:            rgb(187,150,11); // School color.
 $yellow:           rgb(218,198,26);  // Youth color.
+$light-blue:       lighten($blue, 20%);  // Block bg color.
 $course-color:     $red;
 
 

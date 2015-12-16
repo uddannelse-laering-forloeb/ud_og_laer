@@ -23,7 +23,7 @@
     font-size: 3em;
     font-weight: bold;
 
-    @include background-set-color('white', 0.7);
+    @include background-set-color('default', 0.7);
 
     &.is-dagtilbud {
       border-color: $blue;
