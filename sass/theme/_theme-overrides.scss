@@ -13,6 +13,27 @@ body {
   color: #333;
 }
 
+
+a {
+  &:link {
+    color: $link-color;
+    text-decoration: underline;
+  }
+
+  &:visited {
+    color: darken($link-color, 5%);
+  }
+
+  &:hover {
+    color: $link-color-hover;
+    text-decoration: none;
+  }
+
+  &:focus {
+    color: darken($link-color, 10%);
+  }
+}
+
 /* Default file: modules/_footer.scss
 ================================================================================================================== */
 
