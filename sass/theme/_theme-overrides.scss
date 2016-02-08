@@ -412,3 +412,12 @@ a {
     @include background-set-color('youth', 1);
   }
 }
+
+.ribbon a,
+.ribbon a:hover {
+  /* Set the text properties */
+  color: $white;
+  text-decoration: none;
+  border-color: #fff;
+  border-color: rgba(255, 255, 255, 0.7);
+}
