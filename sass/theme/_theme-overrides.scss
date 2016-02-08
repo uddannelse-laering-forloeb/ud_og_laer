@@ -105,7 +105,32 @@ body {
 ================================================================================================================== */
 
 .block--dark {
+  @extend %block;
+
   background: $blue;
+  color: $white;
+
+  a {
+    @include strip-link-styles($white, underline);
+  }
+}
+
+.block--light {
+  @extend %block;
+
+  background: $light-blue;
+
+  a {
+    @include strip-link-styles($link-color, underline);
+  }
+}
+
+.block--pdf {
+  &-link {
+    @extend %button;
+
+    @include strip-link-styles($white);
+  }
 }
 
 
