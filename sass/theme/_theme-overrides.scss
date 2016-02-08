@@ -223,6 +223,11 @@ body {
     &-submit {
       @extend %button;
 
+      display: block;
+      margin: $spacing;
+      font-size: .9em;
+      padding: .1em 2em;
+
       @include strip-link-styles($white);
     }
 
@@ -333,4 +338,25 @@ body {
   @extend %teaser--wrapper;
 
   background: $white; // For news.
+}
+
+
+/* Default file: patterns/_ribbon.scss
+================================================================================================================== */
+.is-dagtilbud {
+  .ribbon {
+    @include background-set-color('daycare', 1);
+  }
+}
+
+.is-grundskole {
+  .ribbon {
+    @include background-set-color('school', 1);
+  }
+}
+
+.is-ungdomsuddannelse {
+  .ribbon {
+    @include background-set-color('youth', 1);
+  }
 }
