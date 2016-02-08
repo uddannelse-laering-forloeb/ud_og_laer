@@ -212,7 +212,6 @@ body {
 
   // The filter dropdown for filter lists.
   &--filter-dropdown {
-
     @include box-shadow(3px 3px 6px $gray-dark);
 
     &-inner {
@@ -338,6 +337,13 @@ body {
   @extend %teaser--wrapper;
 
   background: $white; // For news.
+}
+
+
+.teaser--list-button {
+  @extend .button;
+
+  margin: 0 auto; // Center buttons.
 }
 
 
