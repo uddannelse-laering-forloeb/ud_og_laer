@@ -8,39 +8,6 @@
 
 /* Styles
    ========================================================================== */
-
-// Header used for content and teasers
-%content--header {
-  bottom: 0;
-  box-sizing: border-box;
-  font-size: 1.45em;
-  padding: 0 .5em;
-  position: absolute;
-  width: 100%;
-}
-
-
-// Header used for a group of content. (/news, /organizer)
-%content--header-grouping {
-  border-bottom: 1px solid $black;
-  margin: $spacing $spacing/2 $spacing;
-  width: 100%;
-  text-transform: capitalize;
-}
-
-
-// Teaser styles
-%teaser--list {
-  @include flexbox;
-  @include flex-flow(row wrap);
-  @include justify-content(space-between);
-
-  @include flex(0 1 100%);
-
-  min-width: 0px; // To allow image shrink.
-}
-
-
 %teaser--wrapper {
   @include flexbox;
   @include flex-flow(row nowrap);
@@ -93,24 +60,4 @@
       @include flex(0 0 200px);
     }
   }
-}
-
-
-// Elements of the teaser.
-%teaser--header {
-  margin-top: 0;
-  margin-bottom: .3em;
-
-  a {
-    @include strip-link-styles();
-  }
-}
-
-%teaser--type {
-  color: transparentize($boxlist-font-color, .5);
-  margin-bottom: .4em;
-}
-
-%teaser--type-last-child {
-  margin-bottom: 0;
 }
