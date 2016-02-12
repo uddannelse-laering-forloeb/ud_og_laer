@@ -9,7 +9,7 @@
 /* Default file: base/_base.scss
 ================================================================================================================== */
 body {
-  background-color: $gray-lightest;
+  background: $gray-dark;
   color: #333;
 }
 
@@ -38,7 +38,7 @@ a {
 ================================================================================================================== */
 
 .footer {
-  background: $gray-light;
+  background: $gray-dark;
   color: $white;
 
   // Content elements in footer is editable by editors. We set some defaults.
