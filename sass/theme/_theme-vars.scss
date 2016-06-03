@@ -31,8 +31,9 @@ $blue:             rgb(140,168,203);  // Daycare color.
 $brown:            rgb(187,150,11); // School color.
 $yellow:           rgb(218,198,26);  // Youth color.
 $light-blue:       lighten($blue, 20%);  // Block bg color.
-$course-color:     $red;
-
+$course-color:     $yellow;
+$daycare-color:    $blue;
+$youth-color:      $red;
 
 /* Typography
    ================================================================================================================== */

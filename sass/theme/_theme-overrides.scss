@@ -91,7 +91,7 @@ a {
     }
 
     &.is-ungdomsuddannelse {
-      border-color: $yellow;
+      border-color: $youth-color;
     }
 
     &.is-course {
@@ -203,7 +203,7 @@ a {
     &.is-youth .search--filter-search-submit {
       @include background-set-color('youth', $transparency: 1);
 
-      border-color: $yellow;
+      border-color: $youth-color;
     }
 
     &.is-course,
