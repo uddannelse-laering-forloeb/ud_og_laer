@@ -91,7 +91,7 @@ a {
     }
 
     &.is-ungdomsuddannelse {
-      border-color: $yellow;
+      border-color: $youth-color;
     }
 
     &.is-course {
@@ -114,7 +114,7 @@ a {
 ================================================================================================================== */
 
 .nav--static-pages.is-node {
-  & .nav--static-pages-item {
+  & .nav--list-item-sub {
     a {
       @include strip-link-styles($red);
     }
@@ -126,8 +126,6 @@ a {
 ================================================================================================================== */
 
 .block--dark {
-  @extend %block;
-
   background: $blue;
   color: $white;
 
@@ -137,8 +135,6 @@ a {
 }
 
 .block--light {
-  @extend %block;
-
   background: $light-blue;
 
   a {
@@ -203,7 +199,7 @@ a {
     &.is-youth .search--filter-search-submit {
       @include background-set-color('youth', $transparency: 1);
 
-      border-color: $yellow;
+      border-color: $youth-color;
     }
 
     &.is-course,
@@ -347,8 +343,6 @@ a {
   }
 
   &-text {
-    @extend %content--header;
-
     height: 90px;
 
     &.is-dagtilbud {
