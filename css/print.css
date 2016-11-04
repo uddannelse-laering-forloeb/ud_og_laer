@@ -7,7 +7,7 @@
  */
 
 /* Fetch default print styles */
-@import url("../../ulf_default/css/print-styles.css");
+@import url("../../ulf_default/css/print-styles.css") print;
 
 @font-face {
     font-family: 'Asap';
