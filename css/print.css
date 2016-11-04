@@ -30,7 +30,7 @@
     font-style: italic; }
 
 /* Fetch default print styles */
-@import url("../../ulf_default/css/print-styles.css");
+@import url("../../ulf_default/css/print-styles.css") print;
 
 body {
     background: white;
