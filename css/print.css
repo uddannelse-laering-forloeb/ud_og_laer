@@ -6,13 +6,8 @@
  *
  */
 
-/**
- *
- * Font definitions
- *
- * Should contain definitions for all font-families used on the site
- *
- */
+/* Fetch default print styles */
+@import url("../../ulf_default/css/custom-styles.css");
 
 @font-face {
     font-family: 'Asap';
@@ -28,6 +23,7 @@
     src: url("../fonts/Asap-Italic.ttf");
     /* Pretty Modern Browsers */
     font-style: italic; }
+
 
 body {
     background: white;
