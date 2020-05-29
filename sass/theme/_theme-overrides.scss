@@ -413,3 +413,13 @@ a {
   border-color: #fff;
   border-color: rgba(255, 255, 255, 0.7);
 }
+
+/* Default file: modules/_paragraphs.scss
+================================================================================================================== */
+
+.entity-paragraphs-item {
+  .btn {
+    @extend %button;
+    @include strip-link-styles($white);
+  }
+}
