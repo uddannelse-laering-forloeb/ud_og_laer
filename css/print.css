@@ -81,25 +81,25 @@ a {
     width: 100%;
 }
 
-.field--image img{
-    border-bottom: 5px solid #000;
-}
+/*.field--image img{*/
+/*    border-bottom: 5px solid #000;*/
+/*}*/
 
-.is-dagtilbud  .field--image img{
-    border-bottom: 5px solid rgb(140,168,203);
-}
+/*.is-dagtilbud  .field--image img{*/
+/*    border-bottom: 5px solid rgb(140,168,203);*/
+/*}*/
 
-.is-grundskole .field--image img {
-    border-bottom: 5px solid rgb(187,150,11);
-}
+/*.is-grundskole .field--image img {*/
+/*    border-bottom: 5px solid rgb(187,150,11);*/
+/*}*/
 
-.is-ungdomsuddannelse .field--image img {
-    border-bottom: 5px solid rgb(218,198,26);
-}
+/*.is-ungdomsuddannelse .field--image img {*/
+/*    border-bottom: 5px solid rgb(218,198,26);*/
+/*}*/
 
-.is-course .field--image img {
-    border-bottom: 5px solid rgb(235,95,90);
-}
+/*.is-course .field--image img {*/
+/*    border-bottom: 5px solid rgb(235,95,90);*/
+/*}*/
 
 /* Elements */
 .field--image img {
@@ -209,3 +209,10 @@ a {
 .field--collection-description {
     font-weight: bold;
 }
+/**
+ * World targets
+ */
+.world-targets {display: inline-block;width: 100% ;height: 100px;padding: 0;}
+.world-target {margin: 0;}
+.world-target a {display: inline-block;float: left;padding-right: 10px;}
+.world-target a img {display: block;height: 100px;width: 100px;}
