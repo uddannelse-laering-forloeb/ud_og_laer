@@ -25,6 +25,9 @@
     font-style: italic; }
 
 
+.page { width: 100%; height: 100%; }
+
+
 body {
     background: white;
     width: 700px;
@@ -73,50 +76,30 @@ a {
 }
 
 .content--image {
-    padding-bottom: 60px;
+    padding-bottom: 30px;
     position: relative;
     width: 100%;
 }
 
-.field--image img{
-    border-bottom: 5px solid #000;
-}
+/*.field--image img{*/
+/*    border-bottom: 5px solid #000;*/
+/*}*/
 
-.is-dagtilbud  .field--image img{
-    border-bottom: 5px solid rgb(140,168,203);
-}
+/*.is-dagtilbud  .field--image img{*/
+/*    border-bottom: 5px solid rgb(140,168,203);*/
+/*}*/
 
-.is-grundskole .field--image img {
-    border-bottom: 5px solid rgb(187,150,11);
-}
+/*.is-grundskole .field--image img {*/
+/*    border-bottom: 5px solid rgb(187,150,11);*/
+/*}*/
 
-.is-ungdomsuddannelse .field--image img {
-    border-bottom: 5px solid rgb(218,198,26);
-}
+/*.is-ungdomsuddannelse .field--image img {*/
+/*    border-bottom: 5px solid rgb(218,198,26);*/
+/*}*/
 
-.is-course .field--image img {
-    border-bottom: 5px solid rgb(235,95,90);
-}
-
-
-.field--title {
-    position: absolute;
-    font-size: 30px;
-    bottom: 0;
-}
-
-.content--main {
-    float: left;
-    position: relative;
-    width: 50%;
-}
-
-.content--meta {
-    float: right;
-    position: relative;
-    width: 45%;
-}
-
+/*.is-course .field--image img {*/
+/*    border-bottom: 5px solid rgb(235,95,90);*/
+/*}*/
 
 /* Elements */
 .field--image img {
@@ -134,6 +117,7 @@ a {
     display: block;
     margin-bottom: 10px;
     padding: 20px;
+    page-break-inside: avoid;
 }
 
 .block--dark {
@@ -142,6 +126,7 @@ a {
     display: block;
     margin-bottom: 20px;
     padding: 20px;
+    page-break-inside: avoid;
 }
 
 .block--dark .is-full-width {
@@ -173,13 +158,11 @@ a {
 }
 
 .is-inline .block--field-label {
-    float: left;
-    width: 50%;
+    width: 100%;
 }
 
 .is-inline .block--field-text {
-    float: left;
-    width: 50%;
+    width: 100%;
 }
 
 .block--field-text {
@@ -226,3 +209,10 @@ a {
 .field--collection-description {
     font-weight: bold;
 }
+/**
+ * World targets
+ */
+.world-targets {display: block;padding: 0;height: 100px;margin-top: 20px;margin-bottom: -20px;}
+.world-target {margin: 0;display: inline-block;padding: 0 10px 0 0;height: 100px;width: 100px;}
+.world-target a {display: block;}
+.world-target a img {height: 100px;width: 100px;}
