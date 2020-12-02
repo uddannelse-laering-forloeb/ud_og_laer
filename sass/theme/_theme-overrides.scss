@@ -87,7 +87,7 @@ a {
     }
 
     &.is-grundskole {
-      border-color: $brown;
+      border-color: $school-color;
     }
 
     &.is-ungdomsuddannelse {
@@ -189,7 +189,7 @@ a {
     &.is-school .search--filter-search-submit {
       @include background-set-color('school', $transparency: 1);
 
-      border-color: $brown;
+      border-color: $school-color;
     }
 
     &.is-youth,
