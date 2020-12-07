@@ -27,7 +27,7 @@
   }
 
   &.is-grundskole {
-    border-bottom: 6px solid $brown;
+    border-bottom: 6px solid $school-color;
   }
 
   &.is-ungdomsuddannelse {
@@ -44,7 +44,7 @@
 
   header {
     @include order(2);
-    
+
     box-sizing: border-box;
     padding: $boxlist-padding $boxlist-padding 0;
     width: 100%;

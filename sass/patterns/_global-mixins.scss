@@ -40,7 +40,7 @@
     background: rgba($blue, $transparency);
   }
   @else if $type == "school" {
-    background: rgba($brown, $transparency)
+    background: rgba($school-color, $transparency)
   }
   @else if $type == "youth" {
     background: rgba($youth-color, $transparency);
